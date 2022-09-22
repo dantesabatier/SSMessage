@@ -1,0 +1,87 @@
+﻿/* No comment provided by engineer. */
+"%@ v%@ does not supports the authentication's mechanism specified by this server." = "%1$@ v%2$@ no soporta el mecanismo de autentificación especificado por este servidor.";
+
+/* No comment provided by engineer. */
+"All recipient addresses rejected." = "Todas las direcciones de los destinatarios rechazadas.";
+
+/* No comment provided by engineer. */
+"Bad username or password." = "Nombre de usuario o contraseña incorrectos.";
+
+/* No comment provided by engineer. */
+"bytes" = "bytes";
+
+/* No comment provided by engineer. */
+"Console" = "Consola";
+
+/* No comment provided by engineer. */
+"Could not connect to server" = "No puedo conectar al servidor";
+
+/* No comment provided by engineer. */
+"Delivery account requires authentication, but no password has been specified." = "La cuenta de entrega requiere autenticación, pero ninguna contraseña se han especificado.";
+
+/* No comment provided by engineer. */
+"Error while connecting to the server. Verify your internet connection and/or if you are behind a firewall check your firewall configuration." = "Error durante la conexión con el servidor. Compruebe su conexión a Internet y/o si usted está detrás de un firewall compruebe la configuración del firewall.";
+
+/* No comment provided by engineer. */
+"GB" = "GB";
+
+/* No comment provided by engineer. */
+"Invalid arguments" = "Argumentos no validos";
+
+/* No comment provided by engineer. */
+"KB" = "KB";
+
+/* No comment provided by engineer. */
+"MB" = "MB";
+
+/* No comment provided by engineer. */
+"No messages" = "Ningún mensaje";
+
+/* No comment provided by engineer. */
+"Password Required" = "Contraseña requerida";
+
+/* No comment provided by engineer. */
+"Sender rejected. From address is not one of your addresses." = "Remitente rechazado. De la dirección De no es una de sus direcciones.";
+
+/* No comment provided by engineer. */
+"Server does not respond." = "El servidor no responde.";
+
+/* No comment provided by engineer. */
+"Authentication failed" = "Error de autenticación";
+
+/* No comment provided by engineer. */
+"SMTP Server require SSL connection" = "El servidor SMTP requiere conexión SSL";
+
+/* No comment provided by engineer. */
+"SSL certificate common name doesn't match host name" = "Nombre común del certificado SSL no coincide con el nombre de host";
+
+/* No comment provided by engineer. */
+"SSL certificate doesn't verify" = "Certificado SSL no verifica";
+
+/* No comment provided by engineer. */
+"The server refused our EHLO message." = "El servidor rechazó nuestro mensaje EHLO.";
+
+/* No comment provided by engineer. */
+"The SMTP server refused the sender address" = "El servidor SMTP rechazó la dirección del remitente";
+
+/* No comment provided by engineer. */
+"The SMTP server refused to accept the message data." = "El servidor SMTP se negó a aceptar los datos del mensaje.";
+
+/* No comment provided by engineer. */
+"The SSL connection has failed" = "La conexión SSL ha fallado";
+
+/* No comment provided by engineer. */
+"This message has no recipients" = "Este mensaje no contiene destinatarios";
+
+/* No comment provided by engineer. */
+"This server require authentication. Did you forgot to provide an authentication mechanism?. Please check your settings and try again later." = "Este servidor requiere autenticación. ¿Ha olvidado proporcionar un  mecanismo de autentificación?. Por favor, compruebe la configuración y vuelva a intentarlo más tarde.";
+
+/* No comment provided by engineer. */
+"Timeout while connecting." = "Timeout while connecting.";
+
+/* No comment provided by engineer. */
+"Try enabling SSL." = "Intente habilitar SSL.";
+
+/* No comment provided by engineer. */
+"Unsupported login mechanism." = "Mecanismo de inicio de sesión no compatible.";
+
