@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE018A9B17D0868F00E80F27 /* Mail.app in Sources */ = {isa = PBXBuildFile; fileRef = FE018A9917D0868000E80F27 /* Mail.app */; };
+		FE0512EE185AA66400E1349A /* NSAttributedString+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F551694D65100DCEBFB /* NSAttributedString+SSAdditions.m */; };
+		FE0512EF185AA67200E1349A /* NSAttributedString+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F541694D65100DCEBFB /* NSAttributedString+SSAdditions.h */; };
+		FE0718C222BD80FF006DD9BE /* SSMessageDeliveryAccount.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE926A522296C0E2008292CA /* SSMessageDeliveryAccount.h */; };
+		FE0718C322BD810F006DD9BE /* SSMessageAttachment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE4F2A8B2261EFB8008706A8 /* SSMessageAttachment.h */; };
+		FE0F0677104AEA5300E8E724 /* SSMessageDelivery.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0F0675104AEA5200E8E724 /* SSMessageDelivery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0F0678104AEA5300E8E724 /* SSMessageDelivery.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0676104AEA5200E8E724 /* SSMessageDelivery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE1EDA431BFD360100ED7968 /* SSMessageDefines.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEC241F31152824D0036EBC2 /* SSMessageDefines.h */; };
+		FE227B061743958200F70CDD /* NSArray+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F521694D65100DCEBFB /* NSArray+SSAdditions.h */; };
+		FE227B091743959000F70CDD /* NSDictionary+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F581694D65100DCEBFB /* NSDictionary+SSAdditions.h */; };
+		FE227B0A1743959600F70CDD /* NSString+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F5A1694D65100DCEBFB /* NSString+SSAdditions.h */; };
+		FE227B0E1743996900F70CDD /* SSMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE96EFC9104ACAED00E72463 /* SSMessage.h */; };
+		FE227B0F1743996C00F70CDD /* SSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE96EFCA104ACAED00E72463 /* SSMessage.m */; };
+		FE227B101743996F00F70CDD /* SSMessagePart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6E48CF106E8D93009DED3F /* SSMessagePart.h */; };
+		FE227B111743997100F70CDD /* SSMessagePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E48D0106E8D93009DED3F /* SSMessagePart.m */; };
+		FE227B121743997500F70CDD /* SSConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE650950106BA15400AD49F7 /* SSConnection.h */; };
+		FE227B131743997800F70CDD /* SSConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FE650951106BA15400AD49F7 /* SSConnection.m */; };
+		FE227B1417439ED300F70CDD /* SSMessageDelivery.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0676104AEA5200E8E724 /* SSMessageDelivery.m */; };
+		FE227B1517439ED800F70CDD /* SSMessageDelivery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE0F0675104AEA5200E8E724 /* SSMessageDelivery.h */; };
+		FE246E4421E33DD000A2F251 /* SSMessageErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FE246E4221E33DD000A2F251 /* SSMessageErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE246E4521E33DD000A2F251 /* SSMessageErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E4321E33DD000A2F251 /* SSMessageErrors.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE246E4621E33DD000A2F251 /* SSMessageErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FE246E4321E33DD000A2F251 /* SSMessageErrors.m */; };
+		FE246E4821E33ED800A2F251 /* SSConnectionSecurityLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = FE246E4721E33ED800A2F251 /* SSConnectionSecurityLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE246E4A21E33F3300A2F251 /* SSConnectionAuthenticationScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = FE246E4921E33F3300A2F251 /* SSConnectionAuthenticationScheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE246E4B21E3401900A2F251 /* SSConnectionAuthenticationScheme.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE246E4921E33F3300A2F251 /* SSConnectionAuthenticationScheme.h */; };
+		FE246E4C21E3401D00A2F251 /* SSMessageErrors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE246E4221E33DD000A2F251 /* SSMessageErrors.h */; };
+		FE246E4D21E3402000A2F251 /* SSConnectionSecurityLevel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE246E4721E33ED800A2F251 /* SSConnectionSecurityLevel.h */; };
+		FE2B995E186E356400DBB1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B995D186E356400DBB1AB /* UIKit.framework */; };
+		FE2B9960186E357000DBB1AB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B995F186E357000DBB1AB /* AddressBook.framework */; };
+		FE2B9962186E357500DBB1AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B9961186E357500DBB1AB /* Security.framework */; };
+		FE2BD7DC186E3245000BC105 /* NSTextAttachment+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F5C1694D65100DCEBFB /* NSTextAttachment+SSAdditions.h */; };
+		FE2BD7DD186E324F000BC105 /* NSTextAttachment+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F5D1694D65100DCEBFB /* NSTextAttachment+SSAdditions.m */; };
+		FE32090B1724E6DC00D94D97 /* SBApplication+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3209091724E6DC00D94D97 /* SBApplication+SSAdditions.h */; };
+		FE32090C1724E6DC00D94D97 /* SBApplication+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32090A1724E6DC00D94D97 /* SBApplication+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE42551B1749F82E0043468A /* NSData+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F571694D65100DCEBFB /* NSData+SSAdditions.m */; };
+		FE42551C1749F8360043468A /* NSData+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE6D4F561694D65100DCEBFB /* NSData+SSAdditions.h */; };
+		FE4F2A8D2261EFB8008706A8 /* SSMessageAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4F2A8B2261EFB8008706A8 /* SSMessageAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE4F2A8E2261EFB8008706A8 /* SSMessageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4F2A8C2261EFB8008706A8 /* SSMessageAttachment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE4F2A8F2261EFB8008706A8 /* SSMessageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4F2A8C2261EFB8008706A8 /* SSMessageAttachment.m */; };
+		FE53A6011240AC0500003120 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE53A6001240AC0500003120 /* WebKit.framework */; };
+		FE61743A21FAE5EF00EB6019 /* SSMessageConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEB9859420EF50C900BE5E16 /* SSMessageConstants.h */; };
+		FE650952106BA15400AD49F7 /* SSConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = FE650950106BA15400AD49F7 /* SSConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE650953106BA15400AD49F7 /* SSConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FE650951106BA15400AD49F7 /* SSConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE650C86106C0B2A00AD49F7 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = FE650C84106C0B2A00AD49F7 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE650C87106C0B2A00AD49F7 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FE650C85106C0B2A00AD49F7 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE650D7B106C2CCC00AD49F7 /* SSKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FE650D79106C2CCC00AD49F7 /* SSKeychainItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE650D7C106C2CCC00AD49F7 /* SSKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE650D7A106C2CCC00AD49F7 /* SSKeychainItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F5E1694D65100DCEBFB /* NSArray+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F521694D65100DCEBFB /* NSArray+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F5F1694D65100DCEBFB /* NSArray+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F531694D65100DCEBFB /* NSArray+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F601694D65100DCEBFB /* NSAttributedString+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F541694D65100DCEBFB /* NSAttributedString+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F611694D65100DCEBFB /* NSAttributedString+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F551694D65100DCEBFB /* NSAttributedString+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F621694D65100DCEBFB /* NSData+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F561694D65100DCEBFB /* NSData+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F631694D65100DCEBFB /* NSData+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F571694D65100DCEBFB /* NSData+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F641694D65100DCEBFB /* NSDictionary+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F581694D65100DCEBFB /* NSDictionary+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F651694D65100DCEBFB /* NSDictionary+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F591694D65100DCEBFB /* NSDictionary+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F661694D65100DCEBFB /* NSString+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F5A1694D65100DCEBFB /* NSString+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F671694D65100DCEBFB /* NSString+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F5B1694D65100DCEBFB /* NSString+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6D4F681694D65100DCEBFB /* NSTextAttachment+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6D4F5C1694D65100DCEBFB /* NSTextAttachment+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6D4F691694D65100DCEBFB /* NSTextAttachment+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F5D1694D65100DCEBFB /* NSTextAttachment+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE6E48D1106E8D93009DED3F /* SSMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6E48CF106E8D93009DED3F /* SSMessagePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6E48D2106E8D93009DED3F /* SSMessagePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E48D0106E8D93009DED3F /* SSMessagePart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE75306F10A0839A00224A92 /* SSMessageAddressee.h in Headers */ = {isa = PBXBuildFile; fileRef = FE75306D10A0839A00224A92 /* SSMessageAddressee.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE75307010A0839A00224A92 /* SSMessageAddressee.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75306E10A0839A00224A92 /* SSMessageAddressee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE785B8C2365516000AE5BF3 /* NSURL+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE785B8A2365516000AE5BF3 /* NSURL+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE785B8D2365516000AE5BF3 /* NSURL+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE785B8B2365516000AE5BF3 /* NSURL+SSAdditions.m */; };
+		FE785B8E2365516000AE5BF3 /* NSURL+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE785B8B2365516000AE5BF3 /* NSURL+SSAdditions.m */; };
+		FE785B8F236553BB00AE5BF3 /* NSURL+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE785B8A2365516000AE5BF3 /* NSURL+SSAdditions.h */; };
+		FE7958422200D39300F493BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7958402200D39200F493BC /* Localizable.strings */; };
+		FE7958452200D3A200F493BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7958442200D3A200F493BC /* InfoPlist.strings */; };
+		FE8612B710501D65008C216F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8612B610501D65008C216F /* Cocoa.framework */; };
+		FE8D658A10489D7800EB1B48 /* SSMessageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8D657910489D7800EB1B48 /* SSMessageUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8D658B10489D7800EB1B48 /* SSMessageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D657A10489D7800EB1B48 /* SSMessageUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE8D659910489D9400EB1B48 /* GenericAccount.tiff in Resources */ = {isa = PBXBuildFile; fileRef = FE8D659810489D9400EB1B48 /* GenericAccount.tiff */; };
+		FE8D65C910489F2000EB1B48 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8D65C210489F2000EB1B48 /* AddressBook.framework */; };
+		FE8D65CF10489F2000EB1B48 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8D65C810489F2000EB1B48 /* ScriptingBridge.framework */; };
+		FE8D675D10489F3000EB1B48 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8D675C10489F3000EB1B48 /* Security.framework */; };
+		FE926A542296C0E2008292CA /* SSMessageDeliveryAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = FE926A522296C0E2008292CA /* SSMessageDeliveryAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE926A552296C0E2008292CA /* SSMessageDeliveryAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FE926A532296C0E2008292CA /* SSMessageDeliveryAccount.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE926A562296C0E2008292CA /* SSMessageDeliveryAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FE926A532296C0E2008292CA /* SSMessageDeliveryAccount.m */; };
+		FE92DD83162A654E00CE3B4D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE92DD82162A654E00CE3B4D /* Carbon.framework */; };
+		FE92DD85162A655400CE3B4D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE92DD84162A655400CE3B4D /* CoreServices.framework */; };
+		FE96EFCB104ACAED00E72463 /* SSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = FE96EFC9104ACAED00E72463 /* SSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE96EFCC104ACAED00E72463 /* SSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE96EFCA104ACAED00E72463 /* SSMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEAB30DA1ADE6F92003159B8 /* SSMessageAddressee.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE75306D10A0839A00224A92 /* SSMessageAddressee.h */; };
+		FEAB30DB1ADE6F96003159B8 /* SSMessageUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE8D657910489D7800EB1B48 /* SSMessageUtilities.h */; };
+		FEAB30DE1ADE6FD8003159B8 /* SSMessageAddressee.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75306E10A0839A00224A92 /* SSMessageAddressee.m */; };
+		FEAB30DF1ADE6FDB003159B8 /* SSMessageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D657A10489D7800EB1B48 /* SSMessageUtilities.m */; };
+		FEB9859620EF50C900BE5E16 /* SSMessageConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB9859420EF50C900BE5E16 /* SSMessageConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEB9859720EF50C900BE5E16 /* SSMessageConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB9859520EF50C900BE5E16 /* SSMessageConstants.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEB9859820EF50C900BE5E16 /* SSMessageConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB9859520EF50C900BE5E16 /* SSMessageConstants.m */; };
+		FEC241F41152824D0036EBC2 /* SSMessageDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC241F31152824D0036EBC2 /* SSMessageDefines.h */; };
+		FEE294921742EFAB006E475E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE294911742EFAB006E475E /* Foundation.framework */; };
+		FEE2949D1742EFC9006E475E /* NSArray+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F531694D65100DCEBFB /* NSArray+SSAdditions.m */; };
+		FEE294A01742EFD6006E475E /* NSDictionary+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F591694D65100DCEBFB /* NSDictionary+SSAdditions.m */; };
+		FEE294A11742EFD9006E475E /* NSString+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4F5B1694D65100DCEBFB /* NSString+SSAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FE3209051724E4A500D94D97 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.app";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "sdef \"$INPUT_FILE_PATH\" | sdp -fh -o \"$DERIVED_FILES_DIR\" --basename \"$INPUT_FILE_BASE\" --bundleid `defaults read \"$INPUT_FILE_PATH/Contents/Info\" CFBundleIdentifier`";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEE2948E1742EFAB006E475E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				FE227B061743958200F70CDD /* NSArray+SSAdditions.h in CopyFiles */,
+				FE0512EF185AA67200E1349A /* NSAttributedString+SSAdditions.h in CopyFiles */,
+				FE42551C1749F8360043468A /* NSData+SSAdditions.h in CopyFiles */,
+				FE227B091743959000F70CDD /* NSDictionary+SSAdditions.h in CopyFiles */,
+				FE227B0A1743959600F70CDD /* NSString+SSAdditions.h in CopyFiles */,
+				FE2BD7DC186E3245000BC105 /* NSTextAttachment+SSAdditions.h in CopyFiles */,
+				FE785B8F236553BB00AE5BF3 /* NSURL+SSAdditions.h in CopyFiles */,
+				FE227B1517439ED800F70CDD /* SSMessageDelivery.h in CopyFiles */,
+				FE0718C222BD80FF006DD9BE /* SSMessageDeliveryAccount.h in CopyFiles */,
+				FE0718C322BD810F006DD9BE /* SSMessageAttachment.h in CopyFiles */,
+				FE227B0E1743996900F70CDD /* SSMessage.h in CopyFiles */,
+				FEAB30DA1ADE6F92003159B8 /* SSMessageAddressee.h in CopyFiles */,
+				FE61743A21FAE5EF00EB6019 /* SSMessageConstants.h in CopyFiles */,
+				FE1EDA431BFD360100ED7968 /* SSMessageDefines.h in CopyFiles */,
+				FEAB30DB1ADE6F96003159B8 /* SSMessageUtilities.h in CopyFiles */,
+				FE227B101743996F00F70CDD /* SSMessagePart.h in CopyFiles */,
+				FE227B121743997500F70CDD /* SSConnection.h in CopyFiles */,
+				FE246E4B21E3401900A2F251 /* SSConnectionAuthenticationScheme.h in CopyFiles */,
+				FE246E4C21E3401D00A2F251 /* SSMessageErrors.h in CopyFiles */,
+				FE246E4D21E3402000A2F251 /* SSConnectionSecurityLevel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* SSMessage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessage_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* SSMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		FE018A9917D0868000E80F27 /* Mail.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Mail.app; path = ../../../../../../../Applications/Mail.app; sourceTree = "<group>"; };
+		FE0F0675104AEA5200E8E724 /* SSMessageDelivery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageDelivery.h; sourceTree = "<group>"; };
+		FE0F0676104AEA5200E8E724 /* SSMessageDelivery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageDelivery.m; sourceTree = "<group>"; };
+		FE246E4221E33DD000A2F251 /* SSMessageErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMessageErrors.h; sourceTree = "<group>"; };
+		FE246E4321E33DD000A2F251 /* SSMessageErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMessageErrors.m; sourceTree = "<group>"; };
+		FE246E4721E33ED800A2F251 /* SSConnectionSecurityLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSConnectionSecurityLevel.h; sourceTree = "<group>"; };
+		FE246E4921E33F3300A2F251 /* SSConnectionAuthenticationScheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSConnectionAuthenticationScheme.h; sourceTree = "<group>"; };
+		FE2B995D186E356400DBB1AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE2B995F186E357000DBB1AB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		FE2B9961186E357500DBB1AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		FE3209091724E6DC00D94D97 /* SBApplication+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBApplication+SSAdditions.h"; sourceTree = "<group>"; };
+		FE32090A1724E6DC00D94D97 /* SBApplication+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBApplication+SSAdditions.m"; sourceTree = "<group>"; };
+		FE3BB46B1572534A00B9C5F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FE3BB46E1572534A00B9C5F2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FE3BB46F1572534A00B9C5F2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE3BB4701572534A00B9C5F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE4F2A8B2261EFB8008706A8 /* SSMessageAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMessageAttachment.h; sourceTree = "<group>"; };
+		FE4F2A8C2261EFB8008706A8 /* SSMessageAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMessageAttachment.m; sourceTree = "<group>"; };
+		FE53A6001240AC0500003120 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		FE650950106BA15400AD49F7 /* SSConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSConnection.h; sourceTree = "<group>"; };
+		FE650951106BA15400AD49F7 /* SSConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSConnection.m; sourceTree = "<group>"; };
+		FE650C84106C0B2A00AD49F7 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		FE650C85106C0B2A00AD49F7 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		FE650D79106C2CCC00AD49F7 /* SSKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainItem.h; sourceTree = "<group>"; };
+		FE650D7A106C2CCC00AD49F7 /* SSKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainItem.m; sourceTree = "<group>"; };
+		FE6D4F521694D65100DCEBFB /* NSArray+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F531694D65100DCEBFB /* NSArray+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6D4F541694D65100DCEBFB /* NSAttributedString+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F551694D65100DCEBFB /* NSAttributedString+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6D4F561694D65100DCEBFB /* NSData+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F571694D65100DCEBFB /* NSData+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6D4F581694D65100DCEBFB /* NSDictionary+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F591694D65100DCEBFB /* NSDictionary+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6D4F5A1694D65100DCEBFB /* NSString+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F5B1694D65100DCEBFB /* NSString+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6D4F5C1694D65100DCEBFB /* NSTextAttachment+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment+SSAdditions.h"; sourceTree = "<group>"; };
+		FE6D4F5D1694D65100DCEBFB /* NSTextAttachment+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextAttachment+SSAdditions.m"; sourceTree = "<group>"; };
+		FE6E48CF106E8D93009DED3F /* SSMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessagePart.h; sourceTree = "<group>"; };
+		FE6E48D0106E8D93009DED3F /* SSMessagePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessagePart.m; sourceTree = "<group>"; };
+		FE75306D10A0839A00224A92 /* SSMessageAddressee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageAddressee.h; sourceTree = "<group>"; };
+		FE75306E10A0839A00224A92 /* SSMessageAddressee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageAddressee.m; sourceTree = "<group>"; };
+		FE785B8A2365516000AE5BF3 /* NSURL+SSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+SSAdditions.h"; sourceTree = "<group>"; };
+		FE785B8B2365516000AE5BF3 /* NSURL+SSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SSAdditions.m"; sourceTree = "<group>"; };
+		FE7958412200D39200F493BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE7958442200D3A200F493BC /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 2415919360; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		FE7958472200D3C400F493BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE8612B610501D65008C216F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		FE8D657910489D7800EB1B48 /* SSMessageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageUtilities.h; sourceTree = "<group>"; };
+		FE8D657A10489D7800EB1B48 /* SSMessageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageUtilities.m; sourceTree = "<group>"; };
+		FE8D659810489D9400EB1B48 /* GenericAccount.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GenericAccount.tiff; sourceTree = "<group>"; };
+		FE8D65C210489F2000EB1B48 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FE8D65C810489F2000EB1B48 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
+		FE8D675C10489F3000EB1B48 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE926A522296C0E2008292CA /* SSMessageDeliveryAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMessageDeliveryAccount.h; sourceTree = "<group>"; };
+		FE926A532296C0E2008292CA /* SSMessageDeliveryAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMessageDeliveryAccount.m; sourceTree = "<group>"; };
+		FE92DD82162A654E00CE3B4D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		FE92DD84162A655400CE3B4D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		FE96EFC9104ACAED00E72463 /* SSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessage.h; sourceTree = "<group>"; };
+		FE96EFCA104ACAED00E72463 /* SSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessage.m; sourceTree = "<group>"; };
+		FEB9859420EF50C900BE5E16 /* SSMessageConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageConstants.h; sourceTree = "<group>"; };
+		FEB9859520EF50C900BE5E16 /* SSMessageConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageConstants.m; sourceTree = "<group>"; };
+		FEC241F31152824D0036EBC2 /* SSMessageDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageDefines.h; sourceTree = "<group>"; };
+		FEE294901742EFAB006E475E /* libmessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmessage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE294911742EFAB006E475E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEE294951742EFAB006E475E /* message-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "message-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE92DD85162A655400CE3B4D /* CoreServices.framework in Frameworks */,
+				FE92DD83162A654E00CE3B4D /* Carbon.framework in Frameworks */,
+				FE8D65C910489F2000EB1B48 /* AddressBook.framework in Frameworks */,
+				FE8D65CF10489F2000EB1B48 /* ScriptingBridge.framework in Frameworks */,
+				FE8D675D10489F3000EB1B48 /* Security.framework in Frameworks */,
+				FE8612B710501D65008C216F /* Cocoa.framework in Frameworks */,
+				FE53A6011240AC0500003120 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE2948D1742EFAB006E475E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2B9962186E357500DBB1AB /* Security.framework in Frameworks */,
+				FE2B9960186E357000DBB1AB /* AddressBook.framework in Frameworks */,
+				FE2B995E186E356400DBB1AB /* UIKit.framework in Frameworks */,
+				FEE294921742EFAB006E475E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* SSMessage.framework */,
+				FEE294901742EFAB006E475E /* libmessage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* MailDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				FEE294931742EFAB006E475E /* message */,
+				FE3BB46A1572534A00B9C5F2 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = MailDelivery;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE7958402200D39200F493BC /* Localizable.strings */,
+				FE8D659810489D9400EB1B48 /* GenericAccount.tiff */,
+				FE7958442200D3A200F493BC /* InfoPlist.strings */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6D4F521694D65100DCEBFB /* NSArray+SSAdditions.h */,
+				FE6D4F531694D65100DCEBFB /* NSArray+SSAdditions.m */,
+				FE6D4F541694D65100DCEBFB /* NSAttributedString+SSAdditions.h */,
+				FE6D4F551694D65100DCEBFB /* NSAttributedString+SSAdditions.m */,
+				FE6D4F561694D65100DCEBFB /* NSData+SSAdditions.h */,
+				FE6D4F571694D65100DCEBFB /* NSData+SSAdditions.m */,
+				FE6D4F581694D65100DCEBFB /* NSDictionary+SSAdditions.h */,
+				FE6D4F591694D65100DCEBFB /* NSDictionary+SSAdditions.m */,
+				FE6D4F5A1694D65100DCEBFB /* NSString+SSAdditions.h */,
+				FE6D4F5B1694D65100DCEBFB /* NSString+SSAdditions.m */,
+				FE6D4F5C1694D65100DCEBFB /* NSTextAttachment+SSAdditions.h */,
+				FE6D4F5D1694D65100DCEBFB /* NSTextAttachment+SSAdditions.m */,
+				FE785B8A2365516000AE5BF3 /* NSURL+SSAdditions.h */,
+				FE785B8B2365516000AE5BF3 /* NSURL+SSAdditions.m */,
+				FE3209091724E6DC00D94D97 /* SBApplication+SSAdditions.h */,
+				FE32090A1724E6DC00D94D97 /* SBApplication+SSAdditions.m */,
+				FE650950106BA15400AD49F7 /* SSConnection.h */,
+				FE650951106BA15400AD49F7 /* SSConnection.m */,
+				FE246E4921E33F3300A2F251 /* SSConnectionAuthenticationScheme.h */,
+				FE246E4721E33ED800A2F251 /* SSConnectionSecurityLevel.h */,
+				FE650C84106C0B2A00AD49F7 /* SSKeychain.h */,
+				FE650C85106C0B2A00AD49F7 /* SSKeychain.m */,
+				FE650D79106C2CCC00AD49F7 /* SSKeychainItem.h */,
+				FE650D7A106C2CCC00AD49F7 /* SSKeychainItem.m */,
+				FE96EFC9104ACAED00E72463 /* SSMessage.h */,
+				FE96EFCA104ACAED00E72463 /* SSMessage.m */,
+				FE75306D10A0839A00224A92 /* SSMessageAddressee.h */,
+				FE75306E10A0839A00224A92 /* SSMessageAddressee.m */,
+				FE4F2A8B2261EFB8008706A8 /* SSMessageAttachment.h */,
+				FE4F2A8C2261EFB8008706A8 /* SSMessageAttachment.m */,
+				FEB9859420EF50C900BE5E16 /* SSMessageConstants.h */,
+				FEB9859520EF50C900BE5E16 /* SSMessageConstants.m */,
+				FEC241F31152824D0036EBC2 /* SSMessageDefines.h */,
+				FE0F0675104AEA5200E8E724 /* SSMessageDelivery.h */,
+				FE0F0676104AEA5200E8E724 /* SSMessageDelivery.m */,
+				FE926A522296C0E2008292CA /* SSMessageDeliveryAccount.h */,
+				FE926A532296C0E2008292CA /* SSMessageDeliveryAccount.m */,
+				FE246E4221E33DD000A2F251 /* SSMessageErrors.h */,
+				FE246E4321E33DD000A2F251 /* SSMessageErrors.m */,
+				FE6E48CF106E8D93009DED3F /* SSMessagePart.h */,
+				FE6E48D0106E8D93009DED3F /* SSMessagePart.m */,
+				FE8D657910489D7800EB1B48 /* SSMessageUtilities.h */,
+				FE8D657A10489D7800EB1B48 /* SSMessageUtilities.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8D65C210489F2000EB1B48 /* AddressBook.framework */,
+				FE92DD82162A654E00CE3B4D /* Carbon.framework */,
+				FE8612B610501D65008C216F /* Cocoa.framework */,
+				FE92DD84162A655400CE3B4D /* CoreServices.framework */,
+				FE8D65C810489F2000EB1B48 /* ScriptingBridge.framework */,
+				FE8D675C10489F3000EB1B48 /* Security.framework */,
+				FE53A6001240AC0500003120 /* WebKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FE018A9917D0868000E80F27 /* Mail.app */,
+				32DBCF5E0370ADEE00C91783 /* SSMessage_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FE3BB46A1572534A00B9C5F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE2B9961186E357500DBB1AB /* Security.framework */,
+				FE2B995F186E357000DBB1AB /* AddressBook.framework */,
+				FE2B995D186E356400DBB1AB /* UIKit.framework */,
+				FE3BB46B1572534A00B9C5F2 /* Cocoa.framework */,
+				FEE294911742EFAB006E475E /* Foundation.framework */,
+				FE3BB46D1572534A00B9C5F2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE3BB46D1572534A00B9C5F2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BB46E1572534A00B9C5F2 /* AppKit.framework */,
+				FE3BB46F1572534A00B9C5F2 /* CoreData.framework */,
+				FE3BB4701572534A00B9C5F2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FEE294931742EFAB006E475E /* message */ = {
+			isa = PBXGroup;
+			children = (
+				FEE294941742EFAB006E475E /* Supporting Files */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		FEE294941742EFAB006E475E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEE294951742EFAB006E475E /* message-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8D658A10489D7800EB1B48 /* SSMessageUtilities.h in Headers */,
+				FE96EFCB104ACAED00E72463 /* SSMessage.h in Headers */,
+				FE0F0677104AEA5300E8E724 /* SSMessageDelivery.h in Headers */,
+				FE246E4821E33ED800A2F251 /* SSConnectionSecurityLevel.h in Headers */,
+				FE246E4421E33DD000A2F251 /* SSMessageErrors.h in Headers */,
+				FE650952106BA15400AD49F7 /* SSConnection.h in Headers */,
+				FE650C86106C0B2A00AD49F7 /* SSKeychain.h in Headers */,
+				FEB9859620EF50C900BE5E16 /* SSMessageConstants.h in Headers */,
+				FE650D7B106C2CCC00AD49F7 /* SSKeychainItem.h in Headers */,
+				FE6E48D1106E8D93009DED3F /* SSMessagePart.h in Headers */,
+				FE75306F10A0839A00224A92 /* SSMessageAddressee.h in Headers */,
+				FEC241F41152824D0036EBC2 /* SSMessageDefines.h in Headers */,
+				FE6D4F5E1694D65100DCEBFB /* NSArray+SSAdditions.h in Headers */,
+				FE6D4F601694D65100DCEBFB /* NSAttributedString+SSAdditions.h in Headers */,
+				FE926A542296C0E2008292CA /* SSMessageDeliveryAccount.h in Headers */,
+				FE6D4F621694D65100DCEBFB /* NSData+SSAdditions.h in Headers */,
+				FE246E4A21E33F3300A2F251 /* SSConnectionAuthenticationScheme.h in Headers */,
+				FE6D4F641694D65100DCEBFB /* NSDictionary+SSAdditions.h in Headers */,
+				FE785B8C2365516000AE5BF3 /* NSURL+SSAdditions.h in Headers */,
+				FE4F2A8D2261EFB8008706A8 /* SSMessageAttachment.h in Headers */,
+				FE6D4F661694D65100DCEBFB /* NSString+SSAdditions.h in Headers */,
+				FE6D4F681694D65100DCEBFB /* NSTextAttachment+SSAdditions.h in Headers */,
+				FE32090B1724E6DC00D94D97 /* SBApplication+SSAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* SSMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SSMessage" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+				FE3209051724E4A500D94D97 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = SSMessage;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = MailDelivery;
+			productReference = 8DC2EF5B0486A6940098B216 /* SSMessage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEE2948F1742EFAB006E475E /* message */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE2949C1742EFAB006E475E /* Build configuration list for PBXNativeTarget "message" */;
+			buildPhases = (
+				FEE2948C1742EFAB006E475E /* Sources */,
+				FEE2948D1742EFAB006E475E /* Frameworks */,
+				FEE2948E1742EFAB006E475E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = message;
+			productName = message;
+			productReference = FEE294901742EFAB006E475E /* libmessage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SSMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+				es,
+				pt,
+				it,
+				Base,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* MailDelivery */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* SSMessage */,
+				FEE2948F1742EFAB006E475E /* message */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8D659910489D9400EB1B48 /* GenericAccount.tiff in Resources */,
+				FE7958452200D3A200F493BC /* InfoPlist.strings in Resources */,
+				FE7958422200D39300F493BC /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE018A9B17D0868F00E80F27 /* Mail.app in Sources */,
+				FE8D658B10489D7800EB1B48 /* SSMessageUtilities.m in Sources */,
+				FE96EFCC104ACAED00E72463 /* SSMessage.m in Sources */,
+				FE0F0678104AEA5300E8E724 /* SSMessageDelivery.m in Sources */,
+				FE650953106BA15400AD49F7 /* SSConnection.m in Sources */,
+				FEB9859720EF50C900BE5E16 /* SSMessageConstants.m in Sources */,
+				FE4F2A8E2261EFB8008706A8 /* SSMessageAttachment.m in Sources */,
+				FE650C87106C0B2A00AD49F7 /* SSKeychain.m in Sources */,
+				FE650D7C106C2CCC00AD49F7 /* SSKeychainItem.m in Sources */,
+				FE6E48D2106E8D93009DED3F /* SSMessagePart.m in Sources */,
+				FE785B8D2365516000AE5BF3 /* NSURL+SSAdditions.m in Sources */,
+				FE75307010A0839A00224A92 /* SSMessageAddressee.m in Sources */,
+				FE246E4521E33DD000A2F251 /* SSMessageErrors.m in Sources */,
+				FE6D4F5F1694D65100DCEBFB /* NSArray+SSAdditions.m in Sources */,
+				FE6D4F611694D65100DCEBFB /* NSAttributedString+SSAdditions.m in Sources */,
+				FE6D4F631694D65100DCEBFB /* NSData+SSAdditions.m in Sources */,
+				FE6D4F651694D65100DCEBFB /* NSDictionary+SSAdditions.m in Sources */,
+				FE6D4F671694D65100DCEBFB /* NSString+SSAdditions.m in Sources */,
+				FE926A552296C0E2008292CA /* SSMessageDeliveryAccount.m in Sources */,
+				FE6D4F691694D65100DCEBFB /* NSTextAttachment+SSAdditions.m in Sources */,
+				FE32090C1724E6DC00D94D97 /* SBApplication+SSAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE2948C1742EFAB006E475E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE2949D1742EFC9006E475E /* NSArray+SSAdditions.m in Sources */,
+				FE926A562296C0E2008292CA /* SSMessageDeliveryAccount.m in Sources */,
+				FE785B8E2365516000AE5BF3 /* NSURL+SSAdditions.m in Sources */,
+				FEE294A01742EFD6006E475E /* NSDictionary+SSAdditions.m in Sources */,
+				FEE294A11742EFD9006E475E /* NSString+SSAdditions.m in Sources */,
+				FE42551B1749F82E0043468A /* NSData+SSAdditions.m in Sources */,
+				FE246E4621E33DD000A2F251 /* SSMessageErrors.m in Sources */,
+				FE2BD7DD186E324F000BC105 /* NSTextAttachment+SSAdditions.m in Sources */,
+				FEB9859820EF50C900BE5E16 /* SSMessageConstants.m in Sources */,
+				FE227B1417439ED300F70CDD /* SSMessageDelivery.m in Sources */,
+				FE227B0F1743996C00F70CDD /* SSMessage.m in Sources */,
+				FEAB30DE1ADE6FD8003159B8 /* SSMessageAddressee.m in Sources */,
+				FEAB30DF1ADE6FDB003159B8 /* SSMessageUtilities.m in Sources */,
+				FE227B111743997100F70CDD /* SSMessagePart.m in Sources */,
+				FE227B131743997800F70CDD /* SSConnection.m in Sources */,
+				FE0512EE185AA66400E1349A /* NSAttributedString+SSAdditions.m in Sources */,
+				FE4F2A8F2261EFB8008706A8 /* SSMessageAttachment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE7958402200D39200F493BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE7958412200D39200F493BC /* Base */,
+				FE7958472200D3C400F493BC /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 111;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 111;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = SSMessage_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabatiersotfware.ssmessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 111;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 111;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = SSMessage_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabatiersotfware.ssmessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FEE2949A1742EFAB006E475E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/message.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "message/message-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEE2949B1742EFAB006E475E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/message.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "message/message-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SSMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SSMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE2949C1742EFAB006E475E /* Build configuration list for PBXNativeTarget "message" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEE2949A1742EFAB006E475E /* Debug */,
+				FEE2949B1742EFAB006E475E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
